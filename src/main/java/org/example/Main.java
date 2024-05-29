@@ -9,15 +9,28 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        List<Funcionario> funcionarios = initializeEmployees();
+        List<RegistroVenda> vendas = initializeSales();
 
-        List<Funcionario> funcionarios = new ArrayList<>();
-        funcionarios.add(new Secretario("Jorge Carvalho", 7000.0, 1000.0, "01/2018"));
-        funcionarios.add(new Secretario("Maria Souza", 7000.0, 1000.0, "12/2015"));
-        funcionarios.add(new Vendedor("Ana Silva", 12000.0, 1800.0, "12/2021", 5200.0, "12/2021"));
-        funcionarios.add(new Vendedor("João Mendes", 12000.0, 1800.0, "12/2021", 3400.0, "12/2021"));
-        funcionarios.add(new Gerente("Juliana Alves", 20000.0, 3000.0, "07/2017"));
-        funcionarios.add(new Gerente("Bento Albino", 20000.0, 3000.0, "03/2014"));
+        int[] mesAno = getUserInput();
 
+        FolhaDePagamento folhaDePagamento = new FolhaDePagamento(funcionarios);
+
+        printPayroll(folhaDePagamento, mesAno[0], mesAno[1]);
+    }
+
+    private static List<Funcionario> initializeEmployees() {
+    List<Funcionario> funcionarios = new ArrayList<>();
+    funcionarios.add(new Secretario("Jorge Carvalho", 7000.0, 1000.0, "01/2018", 0));
+    funcionarios.add(new Secretario("Maria Souza", 7000.0, 1000.0, "12/2015", 0));
+    funcionarios.add(new Vendedor("Ana Silva", 12000.0, 1800.0, "12/2021", 5200.0, "12/2021", 0));
+    funcionarios.add(new Vendedor("João Mendes", 12000.0, 1800.0, "12/2021", 3400.0, "12/2021", 0));
+        funcionarios.add(new Gerente("Juliana Alves", 20000.0, "07/2017", 2));
+        funcionarios.add(new Gerente("Bento Albino ", 20000.0, "3/2014", 2));
+        return funcionarios;
+}
+
+    private static List<RegistroVenda> initializeSales() {
         List<RegistroVenda> vendas = new ArrayList<>();
         vendas.add(new RegistroVenda("Ana Silva", 5200.0, "12/2021"));
         vendas.add(new RegistroVenda("Ana Silva", 4000.0, "01/2022"));
@@ -29,16 +42,20 @@ public class Main {
         vendas.add(new RegistroVenda("João Mendes", 5000.0, "02/2022"));
         vendas.add(new RegistroVenda("João Mendes", 5900.0, "03/2022"));
         vendas.add(new RegistroVenda("João Mendes", 6500.0, "04/2022"));
+        return vendas;
+    }
 
+    private static int[] getUserInput() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o mês (MM/AAAA): ");
         String mesAno = scanner.nextLine();
 
         int mes = Integer.parseInt(mesAno.substring(0, 2));
         int ano = Integer.parseInt(mesAno.substring(3));
+        return new int[]{mes, ano};
+    }
 
-        FolhaDePagamento folhaDePagamento = new FolhaDePagamento(funcionarios);
-
+    private static void printPayroll(FolhaDePagamento folhaDePagamento, int mes, int ano) {
         double valorTotalPago = folhaDePagamento.calcularTotalPago(mes, ano);
         System.out.println("Valor total pago: R$ " + String.format("%.2f", valorTotalPago));
 
