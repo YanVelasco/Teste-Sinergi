@@ -1,0 +1,31 @@
+
+´
+java:S1192O"lDefine a constant instead of duplicating this literal "===========================================" 5 times.(¬‘‡¾ıÿÿÿÿ8üÅš¦ü1J$e4562460-5eb8-4da4-9014-c8f317ad077d
+{
+java:S1172"3Remove these unused method parameters "mes", "ano".(‰Üµ¹ûÿÿÿÿ8òÚš¦ü1J$4fc44055-20ac-4442-89c6-30c7a8e41ce5
+v
+java:S1172"3Remove these unused method parameters "mes", "ano".(ÒÑÇõ8ôÚš¦ü1J$532d32e0-24e1-40f8-949d-c91d511d225e
+{
+java:S1172"3Remove these unused method parameters "mes", "ano".(è¬ÜŸÿÿÿÿÿ8ôÚš¦ü1J$0f344b19-5be2-4bd1-ad59-a83e51a4de1d
+v
+java:S1172%"3Remove these unused method parameters "mes", "ano".(ë€î¡8õÚš¦ü1J$b7df47b1-cbd6-4c2d-a95c-825f7c05d537
+{
+java:S11722"3Remove these unused method parameters "mes", "ano".(¸éÔŒøÿÿÿÿ8õÚš¦ü1J$891064b2-6f76-419c-89ad-ebb8343fa064
+{
+java:S1172?"3Remove these unused method parameters "mes", "ano".(»Ø¿øÿÿÿÿ8öÚš¦ü1J$139c4830-671b-4c3c-a8c1-b4336384f0b5
+Œ
+java:S6201C"JReplace this instanceof check and cast with 'instanceof Vendedor vendedor'(çéÓ8Ñ©±¦ü1J$ecafa766-f14f-4ca0-b1b3-e65872e422de
+r	java:S106O"+Replace this use of System.out by a logger.(¬‘‡¾ıÿÿÿÿ8÷Úš¦ü1J$6be351b4-0cab-4377-9fea-e80d3a2d4f8d
+m	java:S106P"+Replace this use of System.out by a logger.(¯ıù8÷Úš¦ü1J$4a5b1ea8-8474-4dda-8890-29c186270f5d
+m	java:S106Q"+Replace this use of System.out by a logger.(»¿²Ï8÷Úš¦ü1J$88c112d2-1082-4304-989f-ce38d7d17403
+r	java:S106R"+Replace this use of System.out by a logger.(¬‘‡¾ıÿÿÿÿ8÷Úš¦ü1J$55d9e7c2-7bc0-478e-bfb4-d01339326991
+r	java:S106S"+Replace this use of System.out by a logger.(ğøŠµûÿÿÿÿ8÷Úš¦ü1J$1e4d5197-f6cb-455a-aea5-b0dce039d970
+«
+java:S6201T"hReplace this instanceof check and cast with 'instanceof FuncionarioComissionado funcionarioComissionado'(½ÖÙ‘8øÚš¦ü1J$efb9a678-ef9e-4ba6-8d24-98ce4e9dd987
+m	java:S106V"+Replace this use of System.out by a logger.(·ñğ8øÚš¦ü1J$ff832c43-4292-4022-a4ee-8feb0afd33e5
+r	java:S106Y"+Replace this use of System.out by a logger.(Ï¯¹åûÿÿÿÿ8øÚš¦ü1J$277bbefe-5926-42cb-a6d4-a670e2a2cc93
+m	java:S106["+Replace this use of System.out by a logger.(Ú©¯8ùÚš¦ü1J$b1950b00-a946-46b8-bcc3-25412d925a3a
+r	java:S106\"+Replace this use of System.out by a logger.(¬‘‡¾ıÿÿÿÿ8ùÚš¦ü1J$44bf95aa-6c42-4a32-b97b-3340f816d27b
+r	java:S106`"+Replace this use of System.out by a logger.(¬‘‡¾ıÿÿÿÿ8úÚš¦ü1J$59145425-27ce-498d-8bb5-d6fee3fd8579
+m	java:S106a"+Replace this use of System.out by a logger.(°èƒ‘8úÚš¦ü1J$1be76d31-e446-4ee9-afc0-76f8ff709cc2
+r	java:S106b"+Replace this use of System.out by a logger.(¬‘‡¾ıÿÿÿÿ8úÚš¦ü1J$a262ff4d-e737-49f3-b04a-f5c493bc9a2b
